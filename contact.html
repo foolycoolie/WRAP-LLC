@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — WRAP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="/mnt/data/IMG_3399.jpeg" alt="WRAP logo" class="logo"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html" class="cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1 class="section-title reveal">Contact Us</h1>
+    <p class="reveal delay-1">Tell us about your project and we'll reply with a quote.</p>
+
+    <form class="contact-form reveal delay-2" onsubmit="submitForm(event)">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Phone
+        <input type="tel" name="phone">
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-details reveal delay-3">
+      <p><strong>Address:</strong> 123 Wrap Street, City, State</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> info@wrap.example</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 WRAP</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
